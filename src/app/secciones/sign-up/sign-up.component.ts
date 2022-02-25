@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { CargarJSService } from 'src/app/services/cargar-js.service';
 
 @Component({
   selector: 'app-sign-up',
@@ -9,13 +10,13 @@ export class SignUpComponent implements OnInit {
 
   nombre: String = "";
   apellido: String = "";
-  edad: number = 0; 
+  edad: number = 0;
 
-  registrar(){
-    
+  
+
+  constructor(private cargarScripts: CargarJSService) {
+    cargarScripts.Cargar(["firebase"]);
   }
-
-  constructor() { }
 
   ngOnInit(): void {
   }

@@ -13,6 +13,7 @@ import { ServiciosComponent } from './secciones/servicios/servicios.component';
 import { NosotrosComponent } from './secciones/nosotros/nosotros.component';
 import { SignUpComponent } from './secciones/sign-up/sign-up.component';
 import { FormsModule } from '@angular/forms';
+import { CargarJSService } from './services/cargar-js.service';
 
 @NgModule({
   declarations: [
@@ -30,7 +31,7 @@ import { FormsModule } from '@angular/forms';
     RouterModule,
     MenubarModule
   ],
-  providers: [],
+  providers: [CargarJSService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
