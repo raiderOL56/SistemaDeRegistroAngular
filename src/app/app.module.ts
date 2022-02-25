@@ -12,6 +12,7 @@ import { RouterModule } from '@angular/router';
 import { ServiciosComponent } from './secciones/servicios/servicios.component';
 import { NosotrosComponent } from './secciones/nosotros/nosotros.component';
 import { SignUpComponent } from './secciones/sign-up/sign-up.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -25,6 +26,7 @@ import { SignUpComponent } from './secciones/sign-up/sign-up.component';
   imports: [
     BrowserModule,
     AppRoutingModule,
+    FormsModule,
     RouterModule,
     MenubarModule
   ],

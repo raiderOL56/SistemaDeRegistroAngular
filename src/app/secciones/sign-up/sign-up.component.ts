@@ -7,6 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class SignUpComponent implements OnInit {
 
+  nombre: String = "";
+  apellido: String = "";
+  edad: number = 0; 
+
+  registrar(){
+    
+  }
+
   constructor() { }
 
   ngOnInit(): void {

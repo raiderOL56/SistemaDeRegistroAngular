@@ -1,1 +1,15 @@
-<p>sign-up works!</p>
+<form action="">
+    <label for="">Nombre: </label>
+    <input type="text" name="nombre" [(ngModel)]="nombre">
+    <br>
+
+    <label for="">Apellido: </label>
+    <input type="text">
+    <br>
+
+    <label for="">Edad: </label>
+    <input type="number">
+    <br>
+
+    <button (click)="registrar()">Registrar</button>
+</form>
