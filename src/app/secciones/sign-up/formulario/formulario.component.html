@@ -1,0 +1,53 @@
+<form action="">
+    <div class="input">
+        <span class="p-float-label margin">
+            <input name="nombre" type="text" pInputText [(ngModel)]="nombre"> 
+            <label for="float-input">Escribe tu nombre</label>
+        </span>
+    
+        <span class="p-float-label margin">
+            <input name="apellido" type="text" pInputText [(ngModel)]="apellido"> 
+            <label for="float-input">Escribe tu apellido</label>
+        </span>
+    
+        <span class="p-float-label margin">
+            <input name="edad" type="number" pInputText [(ngModel)]="edad"> 
+            <label for="float-input">Escribe tu edad</label>
+        </span>
+    </div>
+    
+    <div class="margin">
+        <label class="margin" for="">GÉNERO:</label> <br> <br>
+        <p-radioButton class="radioBTN" name="genero" value="Masculino" [(ngModel)]="genero" inputId="genero1"></p-radioButton>
+        <label for="genero1">Masculino</label>
+    
+        <p-radioButton class="radioBTN" name="genero" value="Femenino" [(ngModel)]="genero" inputId="genero2"></p-radioButton>
+        <label for="genero2">Femenino</label>
+    </div>
+
+    <div class="margin">
+        <label for="">PAÍS: </label> <br>
+        <select class="" id="selectPaises"> 
+            <option value="">Selecciona una opción</option>
+        </select>        
+    </div>
+    <div class="margin">
+        <label for="">ESTADO: </label> <br>
+        <select class="" id="selectEstados">
+            <option value="">Selecciona una opción</option>
+        </select>        
+    </div>
+    <div class="margin">
+        <label for="">MUNICIPIO: </label> <br>
+        <select class="" id="selectMunicipios">
+            <option value="">Selecciona una opción</option>
+        </select>        
+    </div>
+
+    <p>Nombre: {{ nombre }}</p>
+    <p>Apellido: {{ apellido }}</p>
+    <p>Edad: {{ edad }}</p>
+    <p>Género: {{ genero }}</p>
+
+    <p-button label="Disabled" (onClick)="registrar()"></p-button>
+</form>

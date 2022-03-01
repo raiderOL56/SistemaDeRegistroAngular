@@ -1,0 +1,15 @@
+.margin{
+    margin: 30px 0;
+}
+
+.radioBTN{
+    margin: 0 10px;
+}
+
+.input{
+    /* display: flex; */
+}
+
+.input span{
+    margin: 0 5px;
+}

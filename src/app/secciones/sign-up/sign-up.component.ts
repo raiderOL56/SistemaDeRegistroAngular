@@ -8,12 +8,6 @@ import { CargarJSService } from 'src/app/services/cargar-js.service';
 })
 export class SignUpComponent implements OnInit {
 
-  nombre: String = "";
-  apellido: String = "";
-  edad: number = 0;
-
-  
-
   constructor(private cargarScripts: CargarJSService) {
     cargarScripts.Cargar(["firebase"]);
   }
