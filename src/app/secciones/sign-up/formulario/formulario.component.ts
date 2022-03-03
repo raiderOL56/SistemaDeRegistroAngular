@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+import { User } from 'src/app/objetos/user.module';
 
 @Component({
   selector: 'app-formulario',
@@ -7,13 +8,24 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormularioComponent implements OnInit {
 
-  nombre: string; 
-  apellido: String;
+  registrado: boolean = false;
+  user: User[] = [];
+  nombre: string;
+  apellido: string;
   edad: number;
-  genero: String;
+  genero: string;
 
   registrar(){
-    console.log("registrado");
+    this.registrado = true;
+
+    let myUser = new User(this.nombre, this.apellido, this.edad, this.genero);
+    this.user.push(myUser);
+
+    // Limpiar input
+    this.nombre = "";
+    this.apellido = "";
+    this.edad = 0;
+    this.genero = "";
   }
 
   constructor() { }

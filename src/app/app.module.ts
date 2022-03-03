@@ -22,6 +22,7 @@ import {ButtonModule} from 'primeng/button';
 import {RadioButtonModule} from 'primeng/radiobutton';
 import {InputTextModule} from 'primeng/inputtext';
 import { FormularioComponent } from './secciones/sign-up/formulario/formulario.component';
+import { RegistradosComponent } from './secciones/sign-up/registrados/registrados.component';
 
 
 @NgModule({
@@ -32,7 +33,8 @@ import { FormularioComponent } from './secciones/sign-up/formulario/formulario.c
     ServiciosComponent,
     NosotrosComponent,
     SignUpComponent,
-    FormularioComponent
+    FormularioComponent,
+    RegistradosComponent
   ],
   imports: [
     BrowserModule,
